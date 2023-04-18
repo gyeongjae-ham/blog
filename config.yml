@@ -28,9 +28,9 @@ params:
     imageHeight: 150
     buttons:
       - name: Posts
-        url: /blog/posts/
+        url: /posts/
       - name: Search
-        url: /blog/search/
+        url: /search/
   socialIcons:
     - name: github
       url: "https://github.com/hiyee-gj"
