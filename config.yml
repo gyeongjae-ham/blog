@@ -51,7 +51,6 @@ params:
   ShowShareButtons: true
   # post 하단에 다음글/이전글 네브 바 생성하기
   ShowPostNavLinks: true
-  # 코드 복사 버튼 생성하기
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: true
