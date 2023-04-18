@@ -1,7 +1,6 @@
 # TIL Blog repo 입니다.
 
 <img src="https://velog.velcdn.com/images/hiyee-gj/post/10faba6f-92d2-4e0b-a164-c7463dde84d4/image.jpeg" height="600px" width="700px">
-![](https://velog.velcdn.com/images/hiyee-gj/post/10faba6f-92d2-4e0b-a164-c7463dde84d4/image.jpeg)
 
 ## Theme
 
