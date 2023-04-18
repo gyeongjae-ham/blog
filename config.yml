@@ -1,0 +1,76 @@
+baseURL: "https://hiyee-gj.github.io/blog/"
+title: 안녕루카
+paginate: 5
+theme: PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  profileMode:
+    enabled: true
+    title: "안녕루카"
+    subtitle: "Always be happy"
+    imageUrl: img/blog-profile.png
+    imageTitle: "Profile image"
+    imageWidth: 150
+    imageHeight: 150
+    buttons:
+      - name: Posts
+        url: /posts/
+      - name: Search
+        url: /search/
+  socialIcons:
+    - name: github
+      url: "https://github.com/hiyee-gj"
+    - name: twitter
+      url: "https://twitter.com/hiyee_gj"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/%EA%B2%BD%EC%9E%AC-%ED%95%A8-384560215/"
+    - name: medium
+      url: "https://hiyee-gj.medium.com/"
+
+  # cover:
+  #   # 커버 이미지에 접근할 수 있도록 경로 허용하기
+  #   linkFullImages: true
+  # post 상단에 루트 표시하기
+  ShowBreadCrumbs: true
+  # post 상단에 읽은 시간 표시하기
+  ShowReadingTime: true
+  # post 하단에 공유할 수 있는 버튼들 생성하기
+  ShowShareButtons: true
+  # post 하단에 다음글/이전글 네브 바 생성하기
+  ShowPostNavLinks: true
+  # 코드 복사 버튼 생성하기
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: true
+menu:
+  main:
+    # - identifier: search
+    #   name: Search
+    #   url: /search/
+    #   weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
