@@ -18,6 +18,7 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
   profileMode:
     enabled: true
     title: "안녕루카"
@@ -26,11 +27,7 @@ params:
     imageTitle: "Profile image"
     imageWidth: 150
     imageHeight: 150
-    buttons:
-      - name: Posts
-        url: /posts/
-      - name: Search
-        url: /search/
+
   socialIcons:
     - name: github
       url: "https://github.com/hiyee-gj"
@@ -56,21 +53,26 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: true
+
 menu:
   main:
-    # - identifier: search
-    #   name: Search
-    #   url: /search/
-    #   weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 30
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 40
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 30
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 40
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 20
+      weight: 30
