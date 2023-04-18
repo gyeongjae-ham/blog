@@ -10,6 +10,8 @@ outputs:
     - JSON
 
 params:
+  assets:
+    favicon: "img/xLzaaP9J.ico"
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
