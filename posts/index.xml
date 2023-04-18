@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 안녕루카</title>
+    <link>https://hiyee-gj.github.io/blog/posts/</link>
+    <description>Recent content in Posts on 안녕루카</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 17 Apr 2023 20:50:36 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>블로그를 분리하는 이유</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230418/</link>
+      <pubDate>Mon, 17 Apr 2023 20:50:36 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230418/</guid>
+      <description>Java의 정석 다시보기 멋쟁이 사자처럼 백엔드 스쿨 5기에 합격하게 되면서 Java와 Spring에 대해서 다시 찐하게 공부할 수 있는 기회를 얻게 되었다. 사실 혼자서도 공부를 지속할 수 있었겠지만 최근 알고리즘과 코딩테스트 준비로 반복적으로 문제만 풀다 보니 뭔가 의지력이 점점 소모되는게 느껴져서 더 통제되는 환경에 나를 던져놓고 나를 성장시키고 싶었는데 운이 좋게도 합격하게 되어 공부에 열정을 다시 불태울 수 있는 기회가 됐다.
+사실 자바의 정석은 작년 이맘 때쯤 좋은 스터디원 분들과 한번 1회독을 마친 책이다.</description>
+    </item>
+    
+  </channel>
+</rss>
