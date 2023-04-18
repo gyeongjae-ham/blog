@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Algorithm on 안녕루카</title>
+    <link>https://hiyee-gj.github.io/blog/tags/algorithm/</link>
+    <description>Recent content in Algorithm on 안녕루카</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 18 Apr 2023 17:21:06 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>코테 공부 - 기초</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230418/</link>
+      <pubDate>Tue, 18 Apr 2023 17:21:06 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230418/</guid>
+      <description>오늘부터 알고리즘과 코딩테스트 공부를 하면서 기록을 남겨보려고 한다 이 기록은 그냥 스스로 리뷰하기 위한 용도이므로 만약에라도 보시는 분들의 실력이 출중하시다면 볼 필요가 없는 글입니다.
+시간 복잡도 문제 해결에 소요되는 시간을 말한다
+Big-O 표기법 시간 복잡도를 표현하는 표기법
+보다시피 N의 값이 커질수록 수행시간은 비약적으로 커지므로 문제 제한 시간에 맞는 풀이법을 찾아서 풀어야한다. 어떤 알고리즘의 최소 시간과 최대 시간을 대략적으로 알고 있다면 문제해결에 서택할 알고리즘을 선택하는데 도움이 된다.
+공간 복잡도 문제를 푸는데 필요한 공간의 크기</description>
+    </item>
+    
+  </channel>
+</rss>
