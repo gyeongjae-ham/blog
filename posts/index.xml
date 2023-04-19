@@ -5,13 +5,24 @@
     <link>https://hiyee-gj.github.io/blog/posts/</link>
     <description>Recent content in Posts on 안녕루카</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Apr 2023 13:12:04 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Apr 2023 20:18:08 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JPA Auditing</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230419-02/</link>
+      <pubDate>Wed, 19 Apr 2023 20:18:08 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230419-02/</guid>
+      <description>Java에서 ORM 기술인 JPA 를 사용해서 도메인(엔티티)을 관계형 데이터베이스 테이블에 매핑할 때 공통적으로 도메인들이 가지고 있는 필드나 컬럼들이 존재한다. 예를 들면 생성일자, 생성자, 수정일자, 수정자 등의 필드 및 컬럼이 있다.
+도메인마다 공통적으로 필요하다면 결국 코드가 중복으로 작성될 수밖에 없게 되고 중복을 무척이나 싫어하는 개발자들은 이 문제를 해결하기 위해서 JPA Auditing 이라는 기능을 개발하게 됩니다.
+Audit 은 감시하다, 감사하다 라는 뜻으로 Spring Date JPA에서 시간에 대해서 자동으로 값을 넣어주는 기능이다. 도메인(엔티티)을 영속성 컨텍스트에 저장하거나 조회를 수행한 후에 update 하는 경우 매번 시간 데이터를 입력해 줘야 하는데, 이 기능을 사용하면 자동으로 시간을 매핑해서 테이블에 넣어준다.</description>
+    </item>
+    
     <item>
       <title>SpringBoot Actuator</title>
-      <link>https://hiyee-gj.github.io/blog/posts/20230419/</link>
+      <link>https://hiyee-gj.github.io/blog/posts/20230419-01/</link>
       <pubDate>Wed, 19 Apr 2023 13:12:04 +0900</pubDate>
       
-      <guid>https://hiyee-gj.github.io/blog/posts/20230419/</guid>
+      <guid>https://hiyee-gj.github.io/blog/posts/20230419-01/</guid>
       <description>웹 개발을 하면서 어플리케이션을 만들 때 서비스 로직뿐만 아니라 사용자의 정보라던지 어떤 경로로 요청이 들어오는지 등 많은 것을 고려하고 개발해야 한다. spring-boot-actuator라는 모듈은 애플리케이션 상태를 종합적으로 정리해서 보여준다.
 Spring Boot Actuator 간단히 말하자면 Spring Boot Application의 상태를 관리해준다.
 Spring Boot Application의 상태정보(health, properties, beans, 구동된 AutoConfiguration 목록 등)을 다룰 수 있도록 자동으로 설정 각종 추상화 클래스(HealthIndicator 등)을 제공하여, 상태 정보를 변경할 수 있도록 Service 제공 노출할 항목 설정 # Actuator 감춰져 있는 모든 endpoint 정보 표출하도록 설정 management.</description>
