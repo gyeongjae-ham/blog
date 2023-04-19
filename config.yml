@@ -14,12 +14,12 @@ params:
     favicon: "img/xLzaaP9J.ico"
   fuseOpts:
     isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
+    # shouldSort: true
+    # location: 0
+    # distance: 1000
+    # threshold: 0.4
     minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ["title"]
 
   profileMode:
     enabled: true
