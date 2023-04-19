@@ -158,10 +158,10 @@
   </header>
   <div class="entry-content">
     <p>자주 사용하다보면 익숙하게 익혀지겠지만, 그래도 기록으로 남겨서 빠르게 와서 복습할 수 있도록 자세하게 남겨보도록 하려한다.
-package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.Objects; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &#34;title&#34;), @Index(columnList = &#34;hashtag&#34;), @Index(columnList = &#34;createdAt&#34;), @Index(columnList = &#34;createdBy&#34;), }) @Entity public class Article { @Id @GeneratedValue(strategy = GenerationType....</p>
+package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.LinkedHashSet; import java.util.Objects; import java.util.Set; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &#34;title&#34;), @Index(columnList = &#34;hashtag&#34;), @Index(columnList = &#34;createdAt&#34;), @Index(columnList = &#34;createdBy&#34;), }) @Entity public class Article { @Id @GeneratedValue(strategy = GenerationType....</p>
   </div>
-  <footer class="entry-footer"><span title='2023-04-19 20:42:57 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to SpringBoot JPA로 Entity 클래스 구성하기" href="https://hiyee-gj.github.io/blog/posts/20230419-03/"></a>
+  <footer class="entry-footer"><span title='2023-04-19 20:42:57 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;3 min</footer>
+  <a class="entry-link" aria-label="post link to SpringBoot JPA로 Entity 클래스 구성하기" href="https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -175,7 +175,7 @@ package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.S
 Audit 은 감시하다, 감사하다 라는 뜻으로 Spring Date JPA에서 시간에 대해서 자동으로 값을 넣어주는 기능이다. 도메인(엔티티)을 영속성 컨텍스트에 저장하거나 조회를 수행한 후에 update 하는 경우 매번 시간 데이터를 입력해 줘야 하는데, 이 기능을 사용하면 자동으로 시간을 매핑해서 테이블에 넣어준다....</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-19 20:18:08 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to JPA Auditing" href="https://hiyee-gj.github.io/blog/posts/20230419-02/"></a>
+  <a class="entry-link" aria-label="post link to JPA Auditing" href="https://hiyee-gj.github.io/blog/posts/20230419_jpa_auditing/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -189,7 +189,7 @@ Spring Boot Actuator 간단히 말하자면 Spring Boot Application의 상태를
 Spring Boot Application의 상태정보(health, properties, beans, 구동된 AutoConfiguration 목록 등)을 다룰 수 있도록 자동으로 설정 각종 추상화 클래스(HealthIndicator 등)을 제공하여, 상태 정보를 변경할 수 있도록 Service 제공 노출할 항목 설정 # Actuator 감춰져 있는 모든 endpoint 정보 표출하도록 설정 management....</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-19 13:12:04 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to SpringBoot Actuator" href="https://hiyee-gj.github.io/blog/posts/20230419-01/"></a>
+  <a class="entry-link" aria-label="post link to SpringBoot Actuator" href="https://hiyee-gj.github.io/blog/posts/20230419_spring_actuator/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -205,7 +205,7 @@ Big-O 표기법 시간 복잡도를 표현하는 표기법
 공간 복잡도 문제를 푸는데 필요한 공간의 크기...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-18 17:21:06 +0900 +0900'>April 18, 2023</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to 코테 공부 - 기초" href="https://hiyee-gj.github.io/blog/posts/20230418/"></a>
+  <a class="entry-link" aria-label="post link to 코테 공부 - 기초" href="https://hiyee-gj.github.io/blog/posts/20230418_%EC%BD%94%ED%85%8C_%EA%B3%B5%EB%B6%80_%EA%B8%B0%EC%B4%88/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -218,7 +218,7 @@ Big-O 표기법 시간 복잡도를 표현하는 표기법
 사실 자바의 정석은 작년 이맘 때쯤 좋은 스터디원 분들과 한번 1회독을 마친 책이다....</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-17 20:50:36 +0900 +0900'>April 17, 2023</span>&nbsp;·&nbsp;2 min</footer>
-  <a class="entry-link" aria-label="post link to 블로그를 분리하는 이유" href="https://hiyee-gj.github.io/blog/posts/20230417/"></a>
+  <a class="entry-link" aria-label="post link to 블로그를 분리하는 이유" href="https://hiyee-gj.github.io/blog/posts/20230417_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%EB%B6%84%EB%A6%AC%ED%95%98%EB%8A%94_%EC%9D%B4%EC%9C%A0/"></a>
 </article>
     </main>
     

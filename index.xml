@@ -8,20 +8,20 @@
     <lastBuildDate>Wed, 19 Apr 2023 20:42:57 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SpringBoot JPA로 Entity 클래스 구성하기</title>
-      <link>https://hiyee-gj.github.io/blog/posts/20230419-03/</link>
+      <link>https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/</link>
       <pubDate>Wed, 19 Apr 2023 20:42:57 +0900</pubDate>
       
-      <guid>https://hiyee-gj.github.io/blog/posts/20230419-03/</guid>
+      <guid>https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/</guid>
       <description>자주 사용하다보면 익숙하게 익혀지겠지만, 그래도 기록으로 남겨서 빠르게 와서 복습할 수 있도록 자세하게 남겨보도록 하려한다.
-package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.Objects; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &amp;#34;title&amp;#34;), @Index(columnList = &amp;#34;hashtag&amp;#34;), @Index(columnList = &amp;#34;createdAt&amp;#34;), @Index(columnList = &amp;#34;createdBy&amp;#34;), }) @Entity public class Article { @Id @GeneratedValue(strategy = GenerationType.</description>
+package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.LinkedHashSet; import java.util.Objects; import java.util.Set; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &amp;#34;title&amp;#34;), @Index(columnList = &amp;#34;hashtag&amp;#34;), @Index(columnList = &amp;#34;createdAt&amp;#34;), @Index(columnList = &amp;#34;createdBy&amp;#34;), }) @Entity public class Article { @Id @GeneratedValue(strategy = GenerationType.</description>
     </item>
     
     <item>
       <title>JPA Auditing</title>
-      <link>https://hiyee-gj.github.io/blog/posts/20230419-02/</link>
+      <link>https://hiyee-gj.github.io/blog/posts/20230419_jpa_auditing/</link>
       <pubDate>Wed, 19 Apr 2023 20:18:08 +0900</pubDate>
       
-      <guid>https://hiyee-gj.github.io/blog/posts/20230419-02/</guid>
+      <guid>https://hiyee-gj.github.io/blog/posts/20230419_jpa_auditing/</guid>
       <description>Java에서 ORM 기술인 JPA 를 사용해서 도메인(엔티티)을 관계형 데이터베이스 테이블에 매핑할 때 공통적으로 도메인들이 가지고 있는 필드나 컬럼들이 존재한다. 예를 들면 생성일자, 생성자, 수정일자, 수정자 등의 필드 및 컬럼이 있다.
 도메인마다 공통적으로 필요하다면 결국 코드가 중복으로 작성될 수밖에 없게 되고 중복을 무척이나 싫어하는 개발자들은 이 문제를 해결하기 위해서 JPA Auditing 이라는 기능을 개발하게 됩니다.
 Audit 은 감시하다, 감사하다 라는 뜻으로 Spring Date JPA에서 시간에 대해서 자동으로 값을 넣어주는 기능이다. 도메인(엔티티)을 영속성 컨텍스트에 저장하거나 조회를 수행한 후에 update 하는 경우 매번 시간 데이터를 입력해 줘야 하는데, 이 기능을 사용하면 자동으로 시간을 매핑해서 테이블에 넣어준다.</description>
@@ -29,10 +29,10 @@ Audit 은 감시하다, 감사하다 라는 뜻으로 Spring Date JPA에서 시�
     
     <item>
       <title>SpringBoot Actuator</title>
-      <link>https://hiyee-gj.github.io/blog/posts/20230419-01/</link>
+      <link>https://hiyee-gj.github.io/blog/posts/20230419_spring_actuator/</link>
       <pubDate>Wed, 19 Apr 2023 13:12:04 +0900</pubDate>
       
-      <guid>https://hiyee-gj.github.io/blog/posts/20230419-01/</guid>
+      <guid>https://hiyee-gj.github.io/blog/posts/20230419_spring_actuator/</guid>
       <description>웹 개발을 하면서 어플리케이션을 만들 때 서비스 로직뿐만 아니라 사용자의 정보라던지 어떤 경로로 요청이 들어오는지 등 많은 것을 고려하고 개발해야 한다. spring-boot-actuator라는 모듈은 애플리케이션 상태를 종합적으로 정리해서 보여준다.
 Spring Boot Actuator 간단히 말하자면 Spring Boot Application의 상태를 관리해준다.
 Spring Boot Application의 상태정보(health, properties, beans, 구동된 AutoConfiguration 목록 등)을 다룰 수 있도록 자동으로 설정 각종 추상화 클래스(HealthIndicator 등)을 제공하여, 상태 정보를 변경할 수 있도록 Service 제공 노출할 항목 설정 # Actuator 감춰져 있는 모든 endpoint 정보 표출하도록 설정 management.</description>
@@ -40,10 +40,10 @@ Spring Boot Application의 상태정보(health, properties, beans, 구동된 Aut
     
     <item>
       <title>코테 공부 - 기초</title>
-      <link>https://hiyee-gj.github.io/blog/posts/20230418/</link>
+      <link>https://hiyee-gj.github.io/blog/posts/20230418_%EC%BD%94%ED%85%8C_%EA%B3%B5%EB%B6%80_%EA%B8%B0%EC%B4%88/</link>
       <pubDate>Tue, 18 Apr 2023 17:21:06 +0900</pubDate>
       
-      <guid>https://hiyee-gj.github.io/blog/posts/20230418/</guid>
+      <guid>https://hiyee-gj.github.io/blog/posts/20230418_%EC%BD%94%ED%85%8C_%EA%B3%B5%EB%B6%80_%EA%B8%B0%EC%B4%88/</guid>
       <description>오늘부터 알고리즘과 코딩테스트 공부를 하면서 기록을 남겨보려고 한다 이 기록은 그냥 스스로 리뷰하기 위한 용도이므로 만약에라도 보시는 분들의 실력이 출중하시다면 볼 필요가 없는 글입니다.
 시간 복잡도 문제 해결에 소요되는 시간을 말한다
 Big-O 표기법 시간 복잡도를 표현하는 표기법
@@ -53,10 +53,10 @@ Big-O 표기법 시간 복잡도를 표현하는 표기법
     
     <item>
       <title>블로그를 분리하는 이유</title>
-      <link>https://hiyee-gj.github.io/blog/posts/20230417/</link>
+      <link>https://hiyee-gj.github.io/blog/posts/20230417_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%EB%B6%84%EB%A6%AC%ED%95%98%EB%8A%94_%EC%9D%B4%EC%9C%A0/</link>
       <pubDate>Mon, 17 Apr 2023 20:50:36 +0900</pubDate>
       
-      <guid>https://hiyee-gj.github.io/blog/posts/20230417/</guid>
+      <guid>https://hiyee-gj.github.io/blog/posts/20230417_%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC_%EB%B6%84%EB%A6%AC%ED%95%98%EB%8A%94_%EC%9D%B4%EC%9C%A0/</guid>
       <description>Java의 정석 다시보기 멋쟁이 사자처럼 백엔드 스쿨 5기에 합격하게 되면서 Java와 Spring에 대해서 다시 찐하게 공부할 수 있는 기회를 얻게 되었다. 사실 혼자서도 공부를 지속할 수 있었겠지만 최근 알고리즘과 코딩테스트 준비로 반복적으로 문제만 풀다 보니 뭔가 의지력이 점점 소모되는게 느껴져서 더 통제되는 환경에 나를 던져놓고 나를 성장시키고 싶었는데 운이 좋게도 합격하게 되어 공부에 열정을 다시 불태울 수 있는 기회가 됐다.
 사실 자바의 정석은 작년 이맘 때쯤 좋은 스터디원 분들과 한번 1회독을 마친 책이다.</description>
     </item>
