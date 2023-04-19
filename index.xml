@@ -5,7 +5,18 @@
     <link>https://hiyee-gj.github.io/blog/</link>
     <description>Recent content on 안녕루카</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 18 Apr 2023 17:21:06 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Apr 2023 13:12:04 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot Actuator</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230419/</link>
+      <pubDate>Wed, 19 Apr 2023 13:12:04 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230419/</guid>
+      <description>웹 개발을 하면서 어플리케이션을 만들 때 서비스 로직뿐만 아니라 사용자의 정보라던지 어떤 경로로 요청이 들어오는지 등 많은 것을 고려하고 개발해야 한다. spring-boot-actuator라는 모듈은 애플리케이션 상태를 종합적으로 정리해서 보여준다.
+Spring Boot Actuator 간단히 말하자면 Spring Boot Application의 상태를 관리해준다.
+Spring Boot Application의 상태정보(health, properties, beans, 구동된 AutoConfiguration 목록 등)을 다룰 수 있도록 자동으로 설정 각종 추상화 클래스(HealthIndicator 등)을 제공하여, 상태 정보를 변경할 수 있도록 Service 제공 노출할 항목 설정 # Actuator 감춰져 있는 모든 endpoint 정보 표출하도록 설정 management.</description>
+    </item>
+    
     <item>
       <title>코테 공부 - 기초</title>
       <link>https://hiyee-gj.github.io/blog/posts/20230418/</link>
