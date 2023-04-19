@@ -21,7 +21,9 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만)
 @ToString // 쉽게 볼 수 있도록
@@ -48,6 +50,14 @@ public class Article {
     // @Column은 기본 설정을 변경하는 경우가 아니라면 생략이 가능하다
     @Setter
     private String hashtag; // 해시태그
+
+    // Jpa 양방향 설정
+    // mappedBy를 하지 않으면 양방향 관계의 두 테이블명을 합쳐서 테이블을 생성한다
+    // mappedBy로 article 테이블로부터 온 것이라고 표시해 주기
+    @ToString.Exclude // 순환 참조의 가능성이 있으므로 양방향 중에서 보통 one의 쪽에서 끊어준다
+    @OrderBy("id")
+    @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
+    private final Set<ArticleComment> articleComments = new LinkedHashSet<>();
 
     @CreatedDate
     @Column(nullable = false)
@@ -91,7 +101,6 @@ public class Article {
         return Objects.hash(id);
     }
 }
-
 ```
 
 다른 설정들은 위 클래스를 찬찬히 보면서 기능을 익히면 되고 `equals and hash` 를 구현한 부분에서
