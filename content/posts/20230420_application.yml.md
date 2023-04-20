@@ -1,5 +1,5 @@
 ---
-title: "application.yml 설정값들에 대한 설명"
+title: "application.yml과 build.gradle 설명"
 date: 2023-04-20T17:59:38+09:00
 draft: false
 tags: ["SpringBoot"]
@@ -45,6 +45,10 @@ spring:
   h2.console.enabled: false
   # resource에 만든 data.sql 작동 시기 설정
   sql.init.mode: ALWAYS
+  # rest repository 설정
+  data.rest:
+    base-path: /api
+    detection-strategy: ANNOTATED
 
 # yml 파일은 줄 세개로 여러 document 설정을 할 수 있다.
 ---
@@ -66,6 +70,40 @@ spring:
   # Test Class에 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
   # 위 설정이 번잡하고 모든 테스트에 적용할 거라면 전역으로 설정하기 위한 부분이다.
   test.database.replace: none
+```
+
+---
+
+```groovy
+dependencies {
+    // spring actuator - Spring Boot Application의 상태를 관리해준다.
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // spring web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // spring jpa - jpa 기능을 사용하도록 하는 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // rest repository - 엔티티 클래스와 레포지토리를 이용해서 바로 restful한 api 작성을 돕는 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    // Rest Repositories HAL Explorer - rest repository 기능을 쉽게 확인하고 테스트할 수 있는 라이브러리
+    implementation 'org.springframework.data:spring-data-rest-hal-explorer'
+
+    // h2 db
+    runtimeOnly 'com.h2database:h2'
+    // mysql db
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // lombok
+    compileOnly 'org.projectlombok:lombok'
+    // lombok 관련
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // Spring Boot DevTools - 프로젝트를 자동으로 재시작해주고, 정적 파일 수정 시 바로 반영해주는 라이브러리
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
 ```
 
 프로젝트를 진행하면서 배우는 `application` 설정들에 대한 정리 글이다. 새로운게 나올 때마다 업데이트 될 예정이다.
