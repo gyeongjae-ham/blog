@@ -158,7 +158,7 @@
   </header>
   <div class="entry-content">
     <p>자주 사용하다보면 익숙하게 익혀지겠지만, 그래도 기록으로 남겨서 빠르게 와서 복습할 수 있도록 자세하게 남겨보도록 하려한다.
-package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.LinkedHashSet; import java.util.Objects; import java.util.Set; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &#34;title&#34;), @Index(columnList = &#34;hashtag&#34;), @Index(columnList = &#34;createdAt&#34;), @Index(columnList = &#34;createdBy&#34;), }) @Entity public class Article { @Id @GeneratedValue(strategy = GenerationType....</p>
+package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.LinkedHashSet; import java.util.Objects; import java.util.Set; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &#34;title&#34;), @Index(columnList = &#34;hashtag&#34;), @Index(columnList = &#34;createdAt&#34;), @Index(columnList = &#34;createdBy&#34;), }) // Entity에도 Auditing을 사용한다는 설정을 해줘야 한다....</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-19 20:42:57 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;3 min</footer>
   <a class="entry-link" aria-label="post link to SpringBoot JPA로 Entity 클래스 구성하기" href="https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/"></a>
@@ -174,7 +174,7 @@ package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.S
 도메인마다 공통적으로 필요하다면 결국 코드가 중복으로 작성될 수밖에 없게 되고 중복을 무척이나 싫어하는 개발자들은 이 문제를 해결하기 위해서 JPA Auditing 이라는 기능을 개발하게 됩니다.
 Audit 은 감시하다, 감사하다 라는 뜻으로 Spring Date JPA에서 시간에 대해서 자동으로 값을 넣어주는 기능이다. 도메인(엔티티)을 영속성 컨텍스트에 저장하거나 조회를 수행한 후에 update 하는 경우 매번 시간 데이터를 입력해 줘야 하는데, 이 기능을 사용하면 자동으로 시간을 매핑해서 테이블에 넣어준다....</p>
   </div>
-  <footer class="entry-footer"><span title='2023-04-19 20:18:08 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;1 min</footer>
+  <footer class="entry-footer"><span title='2023-04-19 20:18:08 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;2 min</footer>
   <a class="entry-link" aria-label="post link to JPA Auditing" href="https://hiyee-gj.github.io/blog/posts/20230419_jpa_auditing/"></a>
 </article>
 
