@@ -33,6 +33,8 @@ import java.util.Set;
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy"),
 })
+// Entity에도 Auditing을 사용한다는 설정을 해줘야 한다.
+@EntityListeners(AuditingEntityListener.class)
 @Entity
 public class Article {
 

@@ -49,3 +49,11 @@ public class JpaConfig {
 
 이처럼 `Entity` 에서 해당 부분에 해당하는 애노테이션을 달아주기만 하면 사용할 수 있다.
 `JpaConfig` 부분은 `Spring Boot Security` 구현 후에 이 글에 추가적으로 업데이트 할 예정이다.
+
+`Entity` 클래스에서도 `Auditing`을 사용한다는 애노테이션을 달아줘야 한다. `Entity` 클래스 위에
+
+```java
+@EntityListeners(AuditingEntityListener.class)
+```
+
+를 표시해줘야 해당 클래스에서 `Auditing` 기능이 동작한다
