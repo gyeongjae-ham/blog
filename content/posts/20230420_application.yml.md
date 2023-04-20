@@ -41,10 +41,9 @@ spring:
       hibernate.format_sql: true
       # jpa 복잡한 연관관계가 매핑되어 있는 쿼리를 사용할 때 한번에 벌크로 select 해 올 수 있도록 하는 설정
       hibernate.default_batch_fetch_size: 100
-    #  인메모리 데이터베이스로 사용할 h2의 웹 콘솔 사용 여부
-  h2.console.enabled:
-    false
-    # resource에 만든 data.sql 작동 시기 설정
+  #  인메모리 데이터베이스로 사용할 h2의 웹 콘솔 사용 여부
+  h2.console.enabled: false
+  # resource에 만든 data.sql 작동 시기 설정
   sql.init.mode: ALWAYS
 
 # yml 파일은 줄 세개로 여러 document 설정을 할 수 있다.
