@@ -171,7 +171,7 @@
     <p>자주 사용하다보면 익숙하게 익혀지겠지만, 그래도 기록으로 남겨서 빠르게 와서 복습할 수 있도록 자세하게 남겨보도록 하려한다.
 package com.fastcampus.springboard.domain; import lombok.Getter; import lombok.Setter; import lombok.ToString; import org.springframework.data.annotation.CreatedBy; import org.springframework.data.annotation.CreatedDate; import org.springframework.data.annotation.LastModifiedBy; import org.springframework.data.annotation.LastModifiedDate; import javax.persistence.*; import java.time.LocalDateTime; import java.util.LinkedHashSet; import java.util.Objects; import java.util.Set; @Getter // 전체 레벨에서는 Setter를 설정하지 말자(데이터 보호를 위해서 필요한 값만) @ToString // 쉽게 볼 수 있도록 @Table(indexes = { // 빠르게 검색할 수 있도록 인덱스 설정 @Index(columnList = &#34;title&#34;), @Index(columnList = &#34;hashtag&#34;), @Index(columnList = &#34;createdAt&#34;), @Index(columnList = &#34;createdBy&#34;), }) // Entity에도 Auditing을 사용한다는 설정을 해줘야 한다....</p>
   </div>
-  <footer class="entry-footer"><span title='2023-04-19 20:42:57 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;3 min</footer>
+  <footer class="entry-footer"><span title='2023-04-19 20:42:57 +0900 +0900'>April 19, 2023</span>&nbsp;·&nbsp;4 min</footer>
   <a class="entry-link" aria-label="post link to SpringBoot JPA로 Entity 클래스 구성하기" href="https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/"></a>
 </article>
 
