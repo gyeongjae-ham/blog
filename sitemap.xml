@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hiyee-gj.github.io/blog/posts/20230420_@datajpatest/</loc>
+    <lastmod>2023-04-20T17:28:15+09:00</lastmod>
+  </url><url>
     <loc>https://hiyee-gj.github.io/blog/posts/</loc>
-    <lastmod>2023-04-19T20:42:57+09:00</lastmod>
+    <lastmod>2023-04-20T17:28:15+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/tags/springboot/</loc>
-    <lastmod>2023-04-19T20:42:57+09:00</lastmod>
-  </url><url>
-    <loc>https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/</loc>
-    <lastmod>2023-04-19T20:42:57+09:00</lastmod>
+    <lastmod>2023-04-20T17:28:15+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/tags/</loc>
-    <lastmod>2023-04-19T20:42:57+09:00</lastmod>
+    <lastmod>2023-04-20T17:28:15+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/</loc>
+    <lastmod>2023-04-20T17:28:15+09:00</lastmod>
+  </url><url>
+    <loc>https://hiyee-gj.github.io/blog/posts/20230419_jpa%EB%A1%9C_entity/</loc>
     <lastmod>2023-04-19T20:42:57+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/tags/jpa/</loc>
