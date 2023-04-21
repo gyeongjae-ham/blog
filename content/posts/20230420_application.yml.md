@@ -89,6 +89,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     // Rest Repositories HAL Explorer - rest repository 기능을 쉽게 확인하고 테스트할 수 있는 라이브러리
     implementation 'org.springframework.data:spring-data-rest-hal-explorer'
+    // Thymeleaf
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
 
     // h2 db
     runtimeOnly 'com.h2database:h2'
