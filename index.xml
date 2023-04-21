@@ -5,7 +5,17 @@
     <link>https://hiyee-gj.github.io/blog/</link>
     <description>Recent content on 안녕루카</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Apr 2023 17:59:38 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 09:37:03 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QueryDSL 설정 방법</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230421_querydsl/</link>
+      <pubDate>Fri, 21 Apr 2023 09:37:03 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230421_querydsl/</guid>
+      <description>QueryDSL 이란 QueryDSL은 HQL(Hibernate Query Language) 쿼리를 타입에 맞게 생성 및 관리할 수 있도록 도와주는 역할을 한다. SQL을 자바 코드처럼 작성할 수 있도록 해 준다
+특징 문자가 아닌 코드로 쿼리를 작성하기 때문에 컴파일 시점에서 문법 오류 발견이 된다 자동완성 등 IDE의 도움을 받을 수 있다 동적 쿼리 작성이 편리하다(여러 방법들 중에서 압도적을로 좋은 부분) 쿼리 작성 시 제약 조건 등을 메서드 화해서 재사용할 수 있다 도메인 타입과 프로퍼티를 안전하게 참조할 수 있으며, 도메인 타입의 리팩터링을 더 잘할 수 있다 아쉽게도 QueryDSL은 Spring Initializr 페이지에서는 추가할 수 없고, 직접 설치해줘야 하는데 이 때 gradle 플러그인으로 설치하는 간단한 방법은 추천하지 않는다.</description>
+    </item>
+    
     <item>
       <title>application.yml과 build.gradle 설명</title>
       <link>https://hiyee-gj.github.io/blog/posts/20230420_application.yml/</link>
