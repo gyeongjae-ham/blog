@@ -56,20 +56,20 @@ categories: [""]
 `@DataJpaTest`가 붙어있다면 위와 같은 테스트 코드를 실행시키면 업데이트 쿼리가 보이지 않을 것이다. 만약 쿼리문을 확인하고 싶다면,
 
 ```java
-    @DisplayName("update 테스트")
-    @Test
-    void givenTestData_whenUpdating_thenWorksFine() {
-        // Given
-        Article article = articleRepository.findById(1L).orElseThrow();
-        String updatedHashtag = "#springboot";
-        article.setHashtag(updatedHashtag);
+@DisplayName("update 테스트")
+@Test
+void givenTestData_whenUpdating_thenWorksFine() {
+    // Given
+    Article article = articleRepository.findById(1L).orElseThrow();
+    String updatedHashtag = "#springboot";
+    article.setHashtag(updatedHashtag);
 
-        // When
-        Article savedArticle = articleRepository.saveAndFlush(article);
+    // When
+    Article savedArticle = articleRepository.saveAndFlush(article);
 
-        // Then
-        assertThat(savedArticle).hasFieldOrPropertyWithValue("hashtag", updatedHashtag);
-    }
+    // Then
+    assertThat(savedArticle).hasFieldOrPropertyWithValue("hashtag", updatedHashtag);
+}
 ```
 
 `save` 부분을 `saveAndFlush` 로 바꾸면 쿼리문을 확인할 수 있다. 다만 업데이트 내용이 DB에 적용되지는 않고 마찬가지로 롤백된다.

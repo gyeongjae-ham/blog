@@ -37,14 +37,17 @@ public class JpaConfig {
 위와 같이 `config` 패키지에 `JpaConfig` 클래스에 설정해주고 안에 설정해주고 쓰면 된다. 지금 `@Bean`은 아직 `Spring Boot Security` 가 붙지 않은 상태에서 임의로 모든 수정자의 이름을 지정해준 모습이다. `Spring Boot Security`가 구현된다면 수정될 부분이다.
 
 ```java
-    @CreatedDate
-    private LocalDateTime createdAt; // 생성일시
-    @CreatedBy
-    private String createdBy; // 생성자
-    @LastModifiedDate
-    private LocalDateTime modifiedAt; // 수정일시
-    @LastModifiedBy
-    private String modifiedBy; // 수정자
+@CreatedDate
+private LocalDateTime createdAt; // 생성일시
+
+@CreatedBy
+private String createdBy; // 생성자
+
+@LastModifiedDate
+private LocalDateTime modifiedAt; // 수정일시
+
+@LastModifiedBy
+private String modifiedBy; // 수정자
 ```
 
 이처럼 `Entity` 에서 해당 부분에 해당하는 애노테이션을 달아주기만 하면 사용할 수 있다.
