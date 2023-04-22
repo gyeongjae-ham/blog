@@ -5,7 +5,19 @@
     <link>https://hiyee-gj.github.io/blog/posts/</link>
     <description>Recent content in Posts on 안녕루카</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 21 Apr 2023 09:37:03 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Apr 2023 18:41:45 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Controller 테스트 작성</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230422_controller_%ED%85%8C%EC%8A%A4%ED%8A%B8/</link>
+      <pubDate>Sat, 22 Apr 2023 18:41:45 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230422_controller_%ED%85%8C%EC%8A%A4%ED%8A%B8/</guid>
+      <description>Controller 테스트 작성 @WebMvcTest Application을 완전하게 시작학지 않고, Web layer를 테스트하고 싶을 때 @WebMvcTest를 사용한다.
+MockMvc 애플리케이션을 배포하지 않고도, 서버의 MVC 동작을 테스트하게 해주는 라이브러리다. 주로 Controller 레이어 테스트에 많이 사용된다.
+테스트 이름 정하기 테스트마다 이름에 테스트하는 조건을 넣기 때문에 따로 @DisplayName을 설정하지 않을 수도 있지만 보다 구분하기 쉽고 명확하게 하기 위해서 사용하는 것을 고려해보는게 좋다고 생각한다.
+@DisplayName(&amp;#34;[view][GET] 게시글 리스트 (게시판) 페이지 - 정상 호출&amp;#34;) 팀마다 이름 규칙을 정해서 맨 앞 부분만 보더라도 어디를 어떤 테스트를 하는 건지 구분짓는 것도 좋은 방법같다.</description>
+    </item>
+    
     <item>
       <title>QueryDSL 설정 방법</title>
       <link>https://hiyee-gj.github.io/blog/posts/20230421_querydsl/</link>

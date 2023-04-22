@@ -223,14 +223,17 @@ Audit 은 감시하다, 감사하다 라는 뜻으로 Spring Date JPA에서 시�
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>위와 같이 <code>config</code> 패키지에 <code>JpaConfig</code> 클래스에 설정해주고 안에 설정해주고 쓰면 된다. 지금 <code>@Bean</code>은 아직 <code>Spring Boot Security</code> 가 붙지 않은 상태에서 임의로 모든 수정자의 이름을 지정해준 모습이다. <code>Spring Boot Security</code>가 구현된다면 수정될 부분이다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>    <span style="color:#a6e22e">@CreatedDate</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> LocalDateTime createdAt<span style="color:#f92672">;</span> <span style="color:#75715e">// 생성일시
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">@CreatedBy</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String createdBy<span style="color:#f92672">;</span> <span style="color:#75715e">// 생성자
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">@LastModifiedDate</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> LocalDateTime modifiedAt<span style="color:#f92672">;</span> <span style="color:#75715e">// 수정일시
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">@LastModifiedBy</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String modifiedBy<span style="color:#f92672">;</span> <span style="color:#75715e">// 수정자
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@CreatedDate</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> LocalDateTime createdAt<span style="color:#f92672">;</span> <span style="color:#75715e">// 생성일시
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@CreatedBy</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> String createdBy<span style="color:#f92672">;</span> <span style="color:#75715e">// 생성자
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@LastModifiedDate</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> LocalDateTime modifiedAt<span style="color:#f92672">;</span> <span style="color:#75715e">// 수정일시
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@LastModifiedBy</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> String modifiedBy<span style="color:#f92672">;</span> <span style="color:#75715e">// 수정자
 </span></span></span></code></pre></div><p>이처럼 <code>Entity</code> 에서 해당 부분에 해당하는 애노테이션을 달아주기만 하면 사용할 수 있다.
 <code>JpaConfig</code> 부분은 <code>Spring Boot Security</code> 구현 후에 이 글에 추가적으로 업데이트 할 예정이다.</p>
 <p><code>Entity</code> 클래스에서도 <code>Auditing</code>을 사용한다는 애노테이션을 달아줘야 한다. <code>Entity</code> 클래스 위에</p>
