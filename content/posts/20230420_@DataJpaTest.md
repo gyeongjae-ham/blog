@@ -2,7 +2,7 @@
 title: "@DataJpaTest 기능"
 date: 2023-04-20T17:28:15+09:00
 draft: false
-tags: ["SpringBoot"]
+tags: ["Test"]
 categories: [""]
 ---
 

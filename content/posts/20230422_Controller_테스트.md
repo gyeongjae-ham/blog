@@ -2,7 +2,7 @@
 title: "Controller 테스트 작성"
 date: 2023-04-22T18:41:45+09:00
 draft: false
-tags: ["Tip"]
+tags: ["Test"]
 categories: [""]
 ---
 
