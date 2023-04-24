@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hiyee-gj.github.io/blog/posts/20230424_@mock_@mockbean/</loc>
+    <lastmod>2023-04-24T23:06:29+09:00</lastmod>
+  </url><url>
     <loc>https://hiyee-gj.github.io/blog/posts/</loc>
-    <lastmod>2023-04-24T22:23:00+09:00</lastmod>
+    <lastmod>2023-04-24T23:06:29+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/tags/</loc>
-    <lastmod>2023-04-24T22:23:00+09:00</lastmod>
+    <lastmod>2023-04-24T23:06:29+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/tags/test/</loc>
-    <lastmod>2023-04-24T22:23:00+09:00</lastmod>
-  </url><url>
-    <loc>https://hiyee-gj.github.io/blog/posts/20230424_@webmvctest/</loc>
-    <lastmod>2023-04-24T22:23:00+09:00</lastmod>
+    <lastmod>2023-04-24T23:06:29+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/</loc>
+    <lastmod>2023-04-24T23:06:29+09:00</lastmod>
+  </url><url>
+    <loc>https://hiyee-gj.github.io/blog/posts/20230424_test_double/</loc>
     <lastmod>2023-04-24T22:23:00+09:00</lastmod>
   </url><url>
     <loc>https://hiyee-gj.github.io/blog/posts/20230422_controller_%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
