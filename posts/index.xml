@@ -5,7 +5,19 @@
     <link>https://hiyee-gj.github.io/blog/posts/</link>
     <description>Recent content in Posts on 안녕루카</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 24 Apr 2023 23:06:29 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 May 2023 11:08:32 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python답게</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230502_python%EB%8B%B5%EA%B2%8C/</link>
+      <pubDate>Tue, 02 May 2023 11:08:32 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230502_python%EB%8B%B5%EA%B2%8C/</guid>
+      <description>이 포스트는 알고리즘을 풀면서 Python 언어의 장점을 극대화해서 효율적으로 해결하기 위해서 학습한 내용을 모아놓은 포스트입니다
+몫과 나머지 print(a // b, a % b) ==&amp;gt; print(*divmod(a, b)) 무조건 divmod를 사용하는 게 좋은 방법은 아닙니다.
+divmod는 작은 숫자를 다룰 때는 a//b, a%b 보다 느립니다. 대신, 큰 숫자를 다룰 때는 더 빠릅니다
+n진법으로 표기된 string을 10진법 숫자로 변환하기 int(x, base=진법) # ex) num = &amp;#39;3212&amp;#39; base = 5 ans = int(num, base) 문자열 정렬하기 s = &amp;#39;가나다라&amp;#39; n = 7 s.</description>
+    </item>
+    
     <item>
       <title>@Mock, @MockBean</title>
       <link>https://hiyee-gj.github.io/blog/posts/20230424_@mock_@mockbean/</link>
