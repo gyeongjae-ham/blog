@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 02 May 2023 11:08:32 +0900</lastBuildDate><atom:link href="https://hiyee-gj.github.io/blog/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Java 코테 팁 정리</title>
+      <link>https://hiyee-gj.github.io/blog/posts/20230503_java_%EC%BD%94%ED%85%8C_%ED%8C%81_%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Tue, 02 May 2023 11:08:32 +0900</pubDate>
+      
+      <guid>https://hiyee-gj.github.io/blog/posts/20230503_java_%EC%BD%94%ED%85%8C_%ED%8C%81_%EC%A0%95%EB%A6%AC/</guid>
+      <description>이 포스트는 Java 언어로 알고리즘을 풀면서 자주 사용하는 함수의 내용을 정리하는 포스트입니다.
+ArrayList 깊은 복사 ArrayList를 깊은 복사하고 싶다면 복사되는배열.addAll(복사할배열) 메서드를 사용하면 된다 ArrayList&amp;lt;Integer&amp;gt; w=new ArrayList&amp;lt;Integer&amp;gt;(); ArrayList&amp;lt;Integer&amp;gt; copy_w=new ArrayList&amp;lt;Integer&amp;gt;(); copy_w.addAll(w); Sort ArrayList를 정렬할 때, 리스트명.sort() 메소드를 사용한다 ArrayList&amp;lt;Integer&amp;gt; ArrList=new ArrayList&amp;lt;Integer&amp;gt;(); ArrList.sort(null); Size ArrayList의 크기는 리스트명.size() 메소드를 사용한다 ArrayList&amp;lt;Integer&amp;gt; ArrList=new ArrayList&amp;lt;Integer&amp;gt;(); ArrList.size(); List Set =&amp;gt; List 변경 생성자에 값을 넣어주면, Set -&amp;gt; List로 변경할 수 있다 Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;String&amp;gt;(); List&amp;lt;String&amp;gt; menuList = new ArrayList&amp;lt;&amp;gt;(set); Sort List를 정렬하고자 할 때, Collections.</description>
+    </item>
+    
+    <item>
       <title>Python답게</title>
       <link>https://hiyee-gj.github.io/blog/posts/20230502_python%EB%8B%B5%EA%B2%8C/</link>
       <pubDate>Tue, 02 May 2023 11:08:32 +0900</pubDate>
