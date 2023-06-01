@@ -1,4 +1,4 @@
-baseURL: "https://hiyee-gj.github.io/blog/"
+baseURL: "https://howdy-luca.github.io/blog/"
 title: 안녕루카
 paginate: 5
 theme: PaperMod
@@ -32,13 +32,13 @@ params:
 
   socialIcons:
     - name: github
-      url: "https://github.com/hiyee-gj"
+      url: "https://github.com/howdy-luca"
     - name: twitter
       url: "https://twitter.com/hiyee_gj"
     - name: linkedin
       url: "https://www.linkedin.com/in/%EA%B2%BD%EC%9E%AC-%ED%95%A8-384560215/"
     - name: medium
-      url: "https://hiyee-gj.medium.com/"
+      url: "https://howdy-luca.medium.com/"
 
   # cover:
   #   # 커버 이미지에 접근할 수 있도록 경로 허용하기
